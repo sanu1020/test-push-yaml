@@ -1,0 +1,15 @@
+apiversion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: redis
+  namespace: default
+spec:
+  chart:
+    chart: redis
+    reconcilestrategy: ChartVersion
+    version: 18.0.4
+    sourceref:
+      kind: HelmRepository
+      name: bitnami
+  interval: 5m0s
+  releasename: redis
