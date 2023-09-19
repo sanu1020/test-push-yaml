@@ -1,0 +1,16 @@
+apiversion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ""
+  namespace: ""
+spec:
+  chart:
+    chart: ""
+    reconcilestrategy: ChartVersion
+    version: ""
+    sourceref:
+      kind: HelmRepository
+      name: ""
+  interval: 5m0s
+  releasename: ""
+  values: {}
